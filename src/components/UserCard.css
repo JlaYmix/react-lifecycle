@@ -1,0 +1,59 @@
+* {
+    inset: 0;
+    box-sizing: border-box;
+}
+
+/* Загальна оболочка */
+.user-card-container {
+    display: inline-flex;
+    margin-bottom: 1rem;
+}
+
+/* Дочірня оболочка */
+.user-card {
+    width: 12rem;
+    padding: 20px;
+    margin: auto 3rem 0px;
+    border-radius: 8px;
+    font-size: 16px;
+
+    border-top-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+/* Стилі для чоловіків */
+.male {
+    background-color: #b3e0ff;
+    color: #004d80;
+}
+
+/* Стилі для жінок */
+.female {
+    background-color: #ffb3d9;
+    color: #800080; 
+}
+
+/* Стиль для всіх користувачів */
+.other {
+    background-color: #f2f2f2; 
+    color: #666666; 
+}
+
+/* Стиль для кнопочки */
+.buttonClick {
+    color: white;
+    background-color: rgb(68, 87, 68);
+
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 1rem;
+
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+/* Псевдоклас hover для кнопочки */
+.buttonClick:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
